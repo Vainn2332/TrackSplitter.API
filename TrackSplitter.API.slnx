@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="TrackSplitter.API/TrackSplitter.API.csproj" />
+  <Project Path="TrackSplitter.BusinessLogic/TrackSplitter.BusinessLogic.csproj" />
+  <Project Path="TrackSplitter.DataAccess/TrackSplitter.DataAccess.csproj" />
+</Solution>
