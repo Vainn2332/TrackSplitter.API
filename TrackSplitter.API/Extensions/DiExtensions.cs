@@ -8,8 +8,11 @@ public static class DiExtensions
     {
         public IServiceCollection AddAppServices(IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("Postgres")
-                ?? throw new ArgumentException("Couldn't find db connection string for Postgres");
+            var connectionString = configuration.GetConnectionString("Postgres");
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new ArgumentException("Couldn't find db connection string for Postgres");
+            }
 
             services.AddBusinessLogicLayer(connectionString);
 
