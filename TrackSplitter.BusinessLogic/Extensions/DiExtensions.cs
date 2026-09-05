@@ -43,6 +43,13 @@ public static class DiExtensions
                         hostConfigurator.Password(options.Password);
                     });
 
+                    // Plain JSON on the wire so the Python (Demucs) consumer can read
+                    // messages without the MassTransit envelope.
+                    cfg.UseRawJsonSerializer();
+
+                    // One long-running (Demucs) message per worker at a time.
+                    cfg.PrefetchCount = 1;
+
                     cfg.ConfigureEndpoints(context);
                 });
             });
