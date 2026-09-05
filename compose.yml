@@ -20,7 +20,7 @@ services:
     image: postgres:17-alpine
     container_name: tracksplitter-postgres
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment:
       POSTGRES_DB: ${DbName}
       POSTGRES_USER: ${DbUser}
