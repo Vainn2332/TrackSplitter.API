@@ -1,5 +1,6 @@
 using TrackSplitter.API.Configuration;
 using TrackSplitter.API.Extensions;
+using TrackSplitter.DataAccess.Extensions;
 
 EnvLoader.Load();
 
@@ -12,6 +13,8 @@ builder.Services.AddOpenApi();
 builder.Services.AddAppServices(builder.Configuration);
 
 var app = builder.Build();
+
+await app.Services.MigrateDatabaseAsync();
 
 if (app.Environment.IsDevelopment())
 {
