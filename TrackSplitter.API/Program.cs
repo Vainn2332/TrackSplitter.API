@@ -1,4 +1,8 @@
+using TrackSplitter.API.Configuration;
 using TrackSplitter.API.Extensions;
+
+EnvLoader.Load();
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
