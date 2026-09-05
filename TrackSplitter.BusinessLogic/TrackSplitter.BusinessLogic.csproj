@@ -7,7 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.5" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\TrackSplitter.DataAccess\TrackSplitter.DataAccess.csproj" />
+    <ProjectReference Include="..\TrackSplitter.Messages\TrackSplitter.Messages.csproj" />
   </ItemGroup>
 
 </Project>
