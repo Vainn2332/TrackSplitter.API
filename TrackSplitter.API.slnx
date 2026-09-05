@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Элементы решения/">
+    <File Path=".gitignore" />
+  </Folder>
   <Project Path="TrackSplitter.API/TrackSplitter.API.csproj" />
   <Project Path="TrackSplitter.BusinessLogic/TrackSplitter.BusinessLogic.csproj" />
   <Project Path="TrackSplitter.DataAccess/TrackSplitter.DataAccess.csproj" />
