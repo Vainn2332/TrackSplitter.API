@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Элементы решения/">
     <File Path=".gitignore" />
+    <File Path="CLAUDE.md" />
   </Folder>
   <Project Path="TrackSplitter.API/TrackSplitter.API.csproj" />
   <Project Path="TrackSplitter.BusinessLogic/TrackSplitter.BusinessLogic.csproj" />
