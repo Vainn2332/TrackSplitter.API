@@ -10,4 +10,5 @@
   <Project Path="TrackSplitter.API/TrackSplitter.API.csproj" />
   <Project Path="TrackSplitter.BusinessLogic/TrackSplitter.BusinessLogic.csproj" />
   <Project Path="TrackSplitter.DataAccess/TrackSplitter.DataAccess.csproj" />
+  <Project Path="TrackSplitter.Messages/TrackSplitter.Messages.csproj" Id="979868fd-3935-4651-b3ff-61b4a0402d4c" />
 </Solution>

@@ -42,6 +42,8 @@ public static class DiExtensions
                         hostConfigurator.Username(options.UserName);
                         hostConfigurator.Password(options.Password);
                     });
+
+                    cfg.ConfigureEndpoints(context);
                 });
             });
 
