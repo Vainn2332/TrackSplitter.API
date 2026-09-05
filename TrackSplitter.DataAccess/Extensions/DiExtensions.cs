@@ -17,4 +17,14 @@ public static class DiExtensions
             return services;
         }
     }
+
+    extension(IServiceProvider services)
+    {
+        public async Task MigrateDatabaseAsync()
+        {
+            using var scope = services.CreateScope();
+            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            await context.Database.MigrateAsync();
+        }
+    }
 }

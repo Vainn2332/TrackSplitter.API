@@ -1,0 +1,14 @@
+# Keep build context small and never leak local artifacts/secrets into the image.
+**/bin/
+**/obj/
+**/.vs/
+.git/
+.github/
+.vscode/
+
+# Secrets — must never be copied into a build layer.
+.env
+*.env
+!.env.example
+
+**/*.user
